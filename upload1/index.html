@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário ROP</title>
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Cadastro ROP</h1>
+
+        <div class="row">
+            <div class="form-group">
+                <label for="tipoRop">TIPO DO ROP:</label>
+                <select id="tipoRop"></select>
+            </div>
+            <div class="form-group">
+                <label for="operacaoEvento">OPERAÇÃO EVENTO:</label>
+                <select id="operacaoEvento"></select>
+            </div>
+            <div class="form-group">
+                <label for="cidade">Cidade:</label>
+                <select id="cidade"></select>
+            </div>
+            <div class="form-group">
+                <label for="bairro">Bairro:</label>
+                <select id="bairro"></select>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="form-group">
+                <label for="numAtendimento">Nº de atendimento:</label>
+                <input type="text" id="numAtendimento">
+            </div>
+            <div class="form-group">
+                <label for="destino">Destino:</label>
+                <input type="text" id="destino">
+            </div>
+            <div class="form-group">
+                <label for="logradouro">Logradouro do fato:</label>
+                <input type="text" id="logradouro">
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="form-group">
+                <label for="numero">Número:</label>
+                <input type="text" id="numero">
+            </div>
+            <div class="form-group">
+                <label for="pontoReferencia">Ponto de referência:</label>
+                <input type="text" id="pontoReferencia">
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="form-group">
+                <label for="data">Data:</label>
+                <input type="date" id="data">
+            </div>
+            <div class="form-group">
+                <label for="hora">Hora:</label>
+                <input type="time" id="hora">
+            </div>
+        </div>
+
+        <div class="toggle-group">
+            <input type="checkbox" class="toggle" id="dinheiro">
+            <label for="dinheiro">Dinheiro</label>
+            <input type="checkbox" class="toggle" id="drogas">
+            <label for="drogas">Drogas</label>
+            <input type="checkbox" class="toggle" id="armas">
+            <label for="armas">Armas</label>
+            <input type="checkbox" class="toggle" id="veiculo">
+            <label for="veiculo">Veículo</label>
+            <input type="checkbox" class="toggle" id="objeto">
+            <label for="objeto">Objeto</label>
+            <input type="checkbox" class="toggle" id="municao">
+            <label for="municao">Munição</label>
+        </div>
+
+        <div class="form-actions">
+            <button type="submit">Próximo</button>
+        </div>
+    </div>
+</body>
+</html>
