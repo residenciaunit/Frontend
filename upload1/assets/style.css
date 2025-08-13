@@ -23,6 +23,7 @@ h1 {
     display: flex;
     gap: 15px;
     margin-bottom: 15px;
+    flex-wrap: wrap;
 }
 
 .form-group {
@@ -43,6 +44,7 @@ select {
     padding: 8px;
     border: 1px solid #ccc;
     border-radius: 6px;
+    width: 100%;
 }
 
 /* Grupo de toggles */
@@ -69,15 +71,31 @@ select {
     transition: background-color 0.3s;
     font-weight: bold;
     text-align: center;
+    min-width: 120px;
+    text-align: center;
+    margin: 5px;
 }
 
-/* Muda a cor de fundo do label quando o checkbox ANTERIOR a ele é clicado */
 .toggle:checked + label {
     background-color: green;
 }
 
+@media (max-width: 768px) {
+    .row {
+        flex-direction: column;
+        gap: 10px;
+    }
 
-/* Botão próximo */
+    .toggle-group {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    button {
+        width: 100%;
+    }
+}
+
 .form-actions {
     text-align: center;
 }
@@ -90,6 +108,7 @@ button {
     border-radius: 6px;
     cursor: pointer;
     font-size: 16px;
+    width: 100%;
 }
 
 button:hover {
