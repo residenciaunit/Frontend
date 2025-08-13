@@ -1,7 +1,12 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
     font-family: Arial, sans-serif;
     background-color: #f2f2f2;
-    margin: 0;
     padding: 20px;
 }
 
@@ -21,8 +26,8 @@ h1 {
 
 .row {
     display: flex;
-    gap: 15px;
-    margin-bottom: 15px;
+    gap: 20px;
+    margin-bottom: 20px;
     flex-wrap: wrap;
 }
 
@@ -30,24 +35,25 @@ h1 {
     flex: 1;
     display: flex;
     flex-direction: column;
+    margin-bottom: 20px;
 }
 
 label {
     font-weight: bold;
-    margin-bottom: 5px;
+    margin-bottom: 8px;
 }
 
 input[type="text"],
 input[type="date"],
 input[type="time"],
 select {
-    padding: 8px;
+    padding: 10px;
     border: 1px solid #ccc;
     border-radius: 6px;
     width: 100%;
+    margin-bottom: 10px;
 }
 
-/* Grupo de toggles */
 .toggle-group {
     display: flex;
     flex-wrap: wrap;
@@ -56,12 +62,10 @@ select {
     justify-content: center;
 }
 
-/* Oculta o checkbox original */
-.toggle {
+.toggle-group input {
     display: none;
 }
 
-/* Estiliza o label como um botão */
 .toggle-group label {
     background-color: red;
     color: white;
@@ -72,12 +76,32 @@ select {
     font-weight: bold;
     text-align: center;
     min-width: 120px;
-    text-align: center;
     margin: 5px;
 }
 
 .toggle:checked + label {
     background-color: green;
+}
+
+.form-actions {
+    text-align: center;
+    margin-top: 20px;
+}
+
+button {
+    padding: 12px 30px;
+    background-color: #1a73e8;
+    border: none;
+    color: white;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 100%;
+    margin-top: 20px;
+}
+
+button:hover {
+    background-color: #1558b0;
 }
 
 @media (max-width: 768px) {
@@ -94,23 +118,4 @@ select {
     button {
         width: 100%;
     }
-}
-
-.form-actions {
-    text-align: center;
-}
-
-button {
-    padding: 10px 20px;
-    background-color: #1a73e8;
-    border: none;
-    color: white;
-    border-radius: 6px;
-    cursor: pointer;
-    font-size: 16px;
-    width: 100%;
-}
-
-button:hover {
-    background-color: #1558b0;
 }
