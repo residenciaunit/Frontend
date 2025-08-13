@@ -9,11 +9,23 @@ document.addEventListener("DOMContentLoaded", function () {
             "Atalaia", "Coroa do Meio", "Farolândia", "Aruana", "Jardins", "Salgado Filho", "São José", "Suíssa", "Centro", "13 de Julho", "Getúlio Vargas", "Cirurgia", "Pereira Lobo", "Dezoito do Forte", "Novo Paraíso", "Luzia", "Olaria", "Palestina", "Bugio", "Industrial", "Cidade Nova", "América", "Capucho", "Siqueira Campos", "São Conrado", "Jabotiana", "Santa Maria", "Aeroporto", "Porto Dantas", "Grageru", "Inácio Barbosa", "Marivan", "Ponto Novo", "Lamarão", "José Conrado de Araújo"
         ],
         "Itabaiana": [
-            "Centro", "Cidade Nova", "São Cristóvão", "São José", "Santana"
+            "Anízio Amancio de Oliveira", "Área Rural de Itabaiana", "Bananeiras", "Centro", "Doutor José Milton Machado", "Mamede Paes Mendonça", "Marcela", "Marianga", "Miguel Teles de Mendonça", "Oviedo Teixeira", "Porto", "Queimadas", "Riacho Doce", "Rotary Club de Itabaiana", "São Cristóvão", "Serrano"
         ],
         "Lagarto": [
-            "Centro", "Jardim das Acácias", "Vila Maria", "São José", "São João"
-        ]
+            "Centro"],
+        "Nossa Senhora do Socorro": [
+            "Albano Franco", "Boa Viagem", "Castelo", "Centro Histórico", "Fernando Collor", "Guajará", "Itacanema", "Jardim", "João Alves", "Mangabeira", "Marcos Freire I", "Marcos Freire II", "Marcos Freire III", "Novo Horizonte", "Pai André", "Palestina de Dentro", "Palestina de Fora", "Parque dos Faróis", "Piabeta", "Porto Grande", "Santa Cecília", "Santa Inês", "Santo Inácio", "São Brás", "Sobrado", "Taboca", "Taiçoca de Dentro", "Taiçoca de Fora"
+        ],
+        "São Cristóvão": [
+            "Centro", "Rosa Elze"],
+        "Estância": [
+            "Alagoas", "Centro", "Cidade Nova"],
+        "Propriá": [
+            "Centro"],
+        "Tobias Barreto": [
+            "Centro"],
+        "Itaporanga D'Ajuda": [
+            "Centro"]
     };
 
     estadoSelect.addEventListener("change", function () {
