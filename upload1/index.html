@@ -3,87 +3,96 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formulário ROP</title>
+    <title>Cadastro ROP</title>
     <link rel="stylesheet" href="assets/style.css">
 </head>
 <body>
     <div class="container">
         <h1>Cadastro ROP</h1>
 
-        <div class="row">
-            <div class="form-group">
-                <label for="tipoRop">TIPO DO ROP:</label>
-                <select id="tipoRop"></select>
+        <form id="form-etapa1">
+            <div class="row">
+                <div class="form-group">
+                    <label for="estado">Estado:</label>
+                    <select id="estado" name="estado">
+                        <option value="Sergipe">Sergipe</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="cidade">Cidade:</label>
+                    <select id="cidade" name="cidade">
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="bairro">Bairro:</label>
+                    <select id="bairro" name="bairro">
+                    </select>
+                </div>
             </div>
-            <div class="form-group">
-                <label for="operacaoEvento">OPERAÇÃO EVENTO:</label>
-                <select id="operacaoEvento"></select>
-            </div>
-            <div class="form-group">
-                <label for="cidade">Cidade:</label>
-                <select id="cidade"></select>
-            </div>
-            <div class="form-group">
-                <label for="bairro">Bairro:</label>
-                <select id="bairro"></select>
-            </div>
-        </div>
 
-        <div class="row">
-            <div class="form-group">
-                <label for="numAtendimento">Nº de atendimento:</label>
-                <input type="text" id="numAtendimento">
+            <div class="row">
+                <div class="form-group">
+                    <label for="num_atendimento">Nº de atendimento:</label>
+                    <input type="text" id="num_atendimento" name="num_atendimento">
+                </div>
+                <div class="form-group">
+                    <label for="destino">Destino:</label>
+                    <input type="text" id="destino" name="destino">
+                </div>
+                <div class="form-group">
+                    <label for="logradouro">Logradouro do fato:</label>
+                    <input type="text" id="logradouro" name="logradouro">
+                </div>
             </div>
-            <div class="form-group">
-                <label for="destino">Destino:</label>
-                <input type="text" id="destino">
-            </div>
-            <div class="form-group">
-                <label for="logradouro">Logradouro do fato:</label>
-                <input type="text" id="logradouro">
-            </div>
-        </div>
 
-        <div class="row">
-            <div class="form-group">
-                <label for="numero">Número:</label>
-                <input type="text" id="numero">
+            <div class="row">
+                <div class="form-group">
+                    <label for="numero">Número:</label>
+                    <input type="text" id="numero" name="numero">
+                </div>
+                <div class="form-group">
+                    <label for="ponto_referencia">Ponto de referência:</label>
+                    <input type="text" id="ponto_referencia" name="ponto_referencia">
+                </div>
             </div>
-            <div class="form-group">
-                <label for="pontoReferencia">Ponto de referência:</label>
-                <input type="text" id="pontoReferencia">
-            </div>
-        </div>
 
-        <div class="row">
-            <div class="form-group">
-                <label for="data">Data:</label>
-                <input type="date" id="data">
+            <div class="row">
+                <div class="form-group">
+                    <label for="data">Data:</label>
+                    <input type="date" id="data" name="data">
+                </div>
+                <div class="form-group">
+                    <label for="hora">Hora:</label>
+                    <input type="time" id="hora" name="hora">
+                </div>
             </div>
-            <div class="form-group">
-                <label for="hora">Hora:</label>
-                <input type="time" id="hora">
+
+            <div class="toggle-group">
+                <input type="checkbox" class="toggle elemento-btn" id="dinheiro">
+                <label for="dinheiro" class="toggle-label">Dinheiro</label>
+
+                <input type="checkbox" class="toggle elemento-btn" id="drogas">
+                <label for="drogas" class="toggle-label">Drogas</label>
+
+                <input type="checkbox" class="toggle elemento-btn" id="armas">
+                <label for="armas" class="toggle-label">Armas</label>
+
+                <input type="checkbox" class="toggle elemento-btn" id="veiculo">
+                <label for="veiculo" class="toggle-label">Veículo</label>
+
+                <input type="checkbox" class="toggle elemento-btn" id="objeto">
+                <label for="objeto" class="toggle-label">Objeto</label>
+
+                <input type="checkbox" class="toggle elemento-btn" id="municao">
+                <label for="municao" class="toggle-label">Munição</label>
             </div>
-        </div>
 
-        <div class="toggle-group">
-            <input type="checkbox" class="toggle" id="dinheiro">
-            <label for="dinheiro">Dinheiro</label>
-            <input type="checkbox" class="toggle" id="drogas">
-            <label for="drogas">Drogas</label>
-            <input type="checkbox" class="toggle" id="armas">
-            <label for="armas">Armas</label>
-            <input type="checkbox" class="toggle" id="veiculo">
-            <label for="veiculo">Veículo</label>
-            <input type="checkbox" class="toggle" id="objeto">
-            <label for="objeto">Objeto</label>
-            <input type="checkbox" class="toggle" id="municao">
-            <label for="municao">Munição</label>
-        </div>
-
-        <div class="form-actions">
-            <button type="submit">Próximo</button>
-        </div>
+            <div class="form-actions">
+                <button id="proximo" type="button" disabled>Próximo</button>
+            </div>
+        </form>
     </div>
+
+    <script src="assets/etapa1.js"></script>
 </body>
 </html>
